@@ -27,7 +27,6 @@ $
    |_|    |_| |_|  \___| |_|     \___| $
                                        $
                                        $
-
 ```
 ****************************************************************************************************************************
 
@@ -79,7 +78,6 @@ L'option `--help` permet d'avoir une aide dans le terminal sur toute les options
 ```
 Exemple :
 go run . --help
-
 ```
 
 
@@ -95,7 +93,6 @@ go run . [OPTION] [STRING] [BANNER]
 
 Exemple :
 go run . --output=FileName.txt "hello" shadow
-
 ```
 
 
@@ -109,7 +106,6 @@ Les options possibles sont : `--align=<left>`, `--align=<right>`, `--align=<cent
 Usage: go run . [OPTION] [STRING] [BANNER]
 
 Example: go run . --align=right something standard
-
 ```
 
 
@@ -125,7 +121,6 @@ go run . [OPTION Reverse] [OPTION Color]
 
 Exemple :
 go run . --reverse=fileName.txt --color=red
-
 ```
 
 
@@ -161,7 +156,6 @@ ANSI ID
 Usage: go run . [OPTION] [STRING]
 
 EX: go run . --color=<color> <letters to be colored> "something"
-
 ```
 
 
