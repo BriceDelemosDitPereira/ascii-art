@@ -4,7 +4,8 @@
 
 Ascii-art est un programme qui prend une string pour argument et retourne une représentation graphique de cette string en utilisant l'ASCII dans le terminal.
 La string entrée en tant qu'argument peut contenir des chiffres, lettres, espaces, caractères spéciaux et prend en charge les retours à la ligne : ``\n``.
-Si une seconde string est entrée, elle permettra de définir la police asii art. 
+Si une seconde string est entrée, elle permettra de définir la police asii art.
+Ce projet à été réalisé dans le cadre de la formation : [Zone01](https://zone01rouennormandie.org/).
 
 ```
 Exemple : 
