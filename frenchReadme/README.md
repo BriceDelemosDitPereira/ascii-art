@@ -7,6 +7,8 @@ La string entrée en tant qu'argument peut contenir des chiffres, lettres, espac
 Si une seconde string est entrée, elle permettra de définir la police asii art.
 Ce projet à été réalisé dans le cadre de la formation : [Zone01](https://zone01rouennormandie.org/).
 
+Le fichiet test.sh permet de lancer plusieurs commandes dans le terminal pour voir des exemples d'utilisations.
+
 ```
 Exemple : 
 

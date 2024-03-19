@@ -5,6 +5,8 @@
 Ascii-art is a program that takes a string as an argument and returns a graphical representation of that string using ASCII characters in the terminal. The input string can contain numbers, letters, spaces, special characters, and supports newline characters (`\n`). If a second string is entered, it will define the ascii art font.
 This project was carried out as part of the training : [Zone01](https://zone01rouennormandie.org/).
 
+The test.sh file allows you to run several commands in the terminal to see examples of uses.
+
 ```
 Example:
 
