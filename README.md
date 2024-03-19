@@ -1,13 +1,11 @@
-# Ascii-Art : 
+# Ascii-Art:
 
-## Into
+## Introduction
 
-Ascii-art est un programme qui prend une string pour argument et retourne une représentation graphique de cette string en utilisant l'ASCII dans le terminal.
-La string entrée en tant qu'argument peut contenir des chiffres, lettres, espaces, caractères spéciaux et prend en charge les retours à la ligne : ``\n``.
-Si une seconde string est entrée, elle permettra de définir la police asii art. 
+Ascii-art is a program that takes a string as an argument and returns a graphical representation of that string using ASCII characters in the terminal. The input string can contain numbers, letters, spaces, special characters, and supports newline characters (`\n`). If a second string is entered, it will define the ascii art font.
 
 ```
-Exemple : 
+Example:
 
 go run . "Hello\n\nThere" | cat -e
  _    _          _   _          $
@@ -28,11 +26,12 @@ $
                                        $
                                        $
 ```
+
 ****************************************************************************************************************************
 
-## Polices
+## Fonts
 
-Avec le progamme se trouvent 4 bibliothèques de caractères qui servent de police d'écriture pour l'ascii-art : 
+With the program are 4 libraries of characters that serve as a writing font for ascii art:
 
 ```
         standard.txt    : standard
@@ -40,10 +39,10 @@ Avec le progamme se trouvent 4 bibliothèques de caractères qui servent de poli
         thinkertoy.txt  : thinkertoy
         varsity.txt     : varsity
 ```
-Pour faire appel à ces polices, il faut la mensionner après l'argument que l'on souhaite transcrire en ascii-art.
+To call these fonts, you must mention them after the argument you want to transcribe into ascii art.
 
 ```
-Exemple : 
+Example:
 go run . "hello" shadow | cat -e
                                  $
 _|                _| _|          $
@@ -65,42 +64,42 @@ o  o o-o o o o-o $
                  $
 ```
 
-Si le nom des polices est mal renseigné dans la commande, le programme renvera une erreur.
-Si aucune police n'est renseignée, la police par défaut sera `standard`.
+If the name of the fonts is entered incorrectly in the command, the program will return an error. If no font is specified, the default font will be `standard`.
 
 ****************************************************************************************************************************
+
 ## Options
 
 ## Help
 
-L'option `--help` permet d'avoir une aide dans le terminal sur toute les options et la façon d'utiliser l'option `--color=<couleur>`.
+The `--help` option provides assistance in the terminal with all the options and how to use the `--color=<color>` option.
 
 ```
-Exemple :
+Example:
 go run . --help
 ```
 
 
 ### Output
 
-Par défaut, le programme retourne la représentation graphique en ASCII dans le terminal mais l'option `--output=<fileName.txt>` permet d'enregistrer la string dans un fichier au nom renseigné après l'appel de l'option.
-Le chemin du fichier sera : `/fonctions/options/output/`
-Si l'option `--output=<fileName.txt>` est utilisée en même temps qu'une autre option, le programme renvera une erreur.
+By default, the program returns the ASCII graphical representation in the terminal, but the `--output=<fileName.txt>` option allows you to save the string to a file with the name entered after the option call.
+The file path will be: `/fonctions/options/output/`
+If the `--output=<fileName.txt>` option is used along with another option, the program will return an error.
 
 ```
 Usage : 
 go run . [OPTION] [STRING] [BANNER]
 
-Exemple :
+Example:
 go run . --output=FileName.txt "hello" shadow
 ```
 
 
 ### Justify
 
-L'option `--align=<type>` permet de changer l'alignement de l'output dans le terminal.
-Seule l'option `--color` peut être utilisée avec l'option `--align=<type>`.
-Les options possibles sont : `--align=<left>`, `--align=<right>`, `--align=<center>`, `--align=<justify>`
+The `--align=<type>` option allows you to change the alignment of the output in the terminal.
+Only the `--color` option can be used with the `--align=<type>` option.
+Possible options are: `--align=<left>`, `--align=<right>`, `--align=<center>`, `--align=<justify>`
 
 ```
 Usage: go run . [OPTION] [STRING] [BANNER]
@@ -111,35 +110,35 @@ Example: go run . --align=right something standard
 
 ### Reverse
 
-L'option `--reverse=<fileName.txt>` permet convertir la représentation graphique en ASCII contenu dans un fichier.
-Seule l'option `--color` peut être utilisée avec l'option `--reverse=<fileName.txt>`.
-Le fichier à convertir doit se situer dans le dossier `/fonctions/options/reverse/filesToReverse/`
+The `--reverse=<fileName.txt>` option allows you to convert the ASCII graphical representation contained in a file.
+Only the `--color` option can be used with the `--reverse=<fileName.txt>` option.
+The file to be converted must be located in the `/fonctions/options/reverse/filesToReverse/` folder.
 
 ```
 Usage : 
 go run . [OPTION Reverse] [OPTION Color]
 
-Exemple :
+Example :
 go run . --reverse=fileName.txt --color=red
 ```
 
 
 ### Color
 
-L'option `--color=<couleur>`permet de changer la couleur de la représentation graphique en ASCII ou celle du résultat de l'option `--reverse` ou de `--align`. L'option `--color` doit être la dernière option entrée.
-Les formats possibles avec cette option : 
+The `--color=<color>` option allows you to change the color of the ASCII graphical representation or that of the result of the `--reverse` or `--align` option. The `--color` option must be the last option entered.
+The possible formats with this option:
 
 ```
-RGB : go run . --color="rgb(x,y,z)" "text"
-x,y and z are numbers from 0 to 255.
+RGB: go run . --color="rgb(x,y,z)" "text"
+x, y, and z are numbers from 0 to 255.
 x = red, y = green, z = blue
 
-HSL : go run . --color="hsl(x%,y%,z%)" "text"
-x, y and z are numbers between 0 and 100.
+HSL: go run . --color="hsl(x%,y%,z%)" "text"
+x, y, and z are numbers between 0 and 100.
 x = red, y = green, z = blue
 
-Hexadecimal : go run . --color="#XXYYZZ" "text"
-x,y and z are numbers between 0-9 and A-F.
+Hexadecimal: go run . --color="#XXYYZZ" "text"
+x, y, and z are numbers between 0-9 and A-F.
 x = red, y = green, z = blue
 
 ANSI Extended: go run . --color="ansi(38;5;XYZ)" "text"
@@ -148,7 +147,6 @@ XYZ is the ID of the color in the extended ANSI color encoding format.
 
 ANSI Standard: go run . --color="ansi(XY)" "text"
 XY is the ID of the color in the standard ANSI color encoding format.
-ANSI ID
 ```
 
 
