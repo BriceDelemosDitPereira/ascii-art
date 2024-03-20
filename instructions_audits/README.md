@@ -9,8 +9,8 @@ You can find each instruction and audit here :
 
 ## Ascii-art-fs
 
-[Instruction for ascii-art-fs](https://github.com/01-edu/public/tree/master/subjects/ascii-art/fs)
-[Audit for ascii-art-fs](https://github.com/01-edu/public/tree/master/subjects/ascii-art/fs/audit)
+- [Instruction for ascii-art-fs](https://github.com/01-edu/public/tree/master/subjects/ascii-art/fs)
+- [Audit for ascii-art-fs](https://github.com/01-edu/public/tree/master/subjects/ascii-art/fs/audit)
 
 ## Ascii-art-color
 
