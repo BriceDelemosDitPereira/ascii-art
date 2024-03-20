@@ -1,6 +1,6 @@
 # Ascii-Art : 
 
-## Into
+## Introduction
 
 Ascii-art est un programme qui prend une string pour argument et retourne une représentation graphique de cette string en utilisant l'ASCII dans le terminal.
 La string entrée en tant qu'argument peut contenir des chiffres, lettres, espaces, caractères spéciaux et prend en charge les retours à la ligne : ``\n``.
@@ -161,8 +161,7 @@ EX: go run . --color=<color> <letters to be colored> "something"
 ```
 
 
-## Développeurs
+## Co-développeurs
 
-- Mickael Marchais
-- Thomas Delestre
-- Brice Delemos Dit Pereira (@BriceDelemosDitPereira)
+- Delestre Thomas
+- Marchais Mickael
