@@ -160,8 +160,7 @@ EX: go run . --color=<color> <letters to be colored> "something"
 ```
 
 
-## Developers
+## Co-developers
 
-- Mickael Marchais
-- Thomas Delestre
-- Brice Delemos Dit Pereira (@BriceDelemosDitPereira)
+- Delestre Thomas
+- Marchais Mickael
