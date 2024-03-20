@@ -74,7 +74,7 @@ Si aucune police n'est renseignée, la police par défaut sera `standard`.
 ****************************************************************************************************************************
 ## Options
 
-## Help
+### Help
 
 L'option `--help` permet d'avoir une aide dans le terminal sur toute les options et la façon d'utiliser l'option `--color=<couleur>`.
 

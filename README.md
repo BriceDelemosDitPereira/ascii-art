@@ -73,7 +73,7 @@ If the name of the fonts is entered incorrectly in the command, the program will
 
 ## Options
 
-## Help
+### Help
 
 The `--help` option provides assistance in the terminal with all the options and how to use the `--color=<color>` option.
 
